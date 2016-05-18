@@ -12,11 +12,10 @@ public class LoginService implements ILoginService {
 
 	@Resource
 	ILoginDao loginDao;
-	
+
 	@Override
 	public boolean checkUser(User user) {
 		return loginDao.checkUser(user);
 	}
 
-	
 }

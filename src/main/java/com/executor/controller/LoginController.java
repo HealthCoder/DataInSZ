@@ -16,15 +16,15 @@ public class LoginController {
 
 	@Resource
 	ILoginService loginService;
-	
+
 	@RequestMapping(value = "/login")
 	public String index(Model model) {
 		return "/login.jsp";
 	}
-	
+
 	@RequestMapping(value = "/index", method = RequestMethod.POST)
-	public String job(@ModelAttribute("user") User user){
-		if(loginService.checkUser(user)){
+	public String job(@ModelAttribute("user") User user) {
+		if (loginService.checkUser(user)) {
 			return "/index.jsp";
 		}
 		return "/login.jsp";
