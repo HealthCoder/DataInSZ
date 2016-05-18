@@ -48,7 +48,7 @@
 	<div class="container">
 		<div class="row demo-row">
 			<div class="col-xs-3">
-			<form id="loginForm" name="loginForm" action="./index" method="post" >
+			<form id="loginForm" name="loginForm" action="./login" method="post" >
 				<h6>username:</h6><input type="text" class="form-control input-sm" placeholder="Small" name="name" />
 				<h6>password:</h6><input type="password" class="form-control input-sm" placeholder="Small" name="password" /><br/>
 				<input id="job_submit_button" type="submit" value="Sign In" class="btn btn-block btn-lg btn-primary"/>
