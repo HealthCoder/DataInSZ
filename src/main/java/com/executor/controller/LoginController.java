@@ -1,7 +1,6 @@
 package com.executor.controller;
 
-import javax.annotation.Resource;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,7 +13,7 @@ import com.executor.service.ILoginService;
 @Controller
 public class LoginController {
 
-	@Resource
+	@Autowired
 	ILoginService loginService;
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)

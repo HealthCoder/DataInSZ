@@ -1,19 +1,23 @@
-package com.executor.dao;
+package com.executor.dao.impl;
 
 import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
+import com.executor.dao.ILoginDao;
 import com.executor.model.User;
 
-@Controller
+@Repository
 public class LoginDao implements ILoginDao {
 
-	@Resource
+	@Autowired
 	JdbcTemplate jdbcTemplate;
 
 	@Override

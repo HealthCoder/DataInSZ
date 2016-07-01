@@ -1,4 +1,4 @@
-package com.executor.service;
+package com.executor.service.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.mortbay.log.Log;
+
+import com.executor.service.IJobService;
 
 public class JobService implements IJobService {
 

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.executor.service.IJobService;
-import com.executor.service.JobService;
+import com.executor.service.impl.JobService;
 
 @Controller
 public class JobController {
