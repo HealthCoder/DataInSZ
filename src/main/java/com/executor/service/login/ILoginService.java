@@ -1,4 +1,4 @@
-package com.executor.service;
+package com.executor.service.login;
 
 import com.executor.model.User;
 

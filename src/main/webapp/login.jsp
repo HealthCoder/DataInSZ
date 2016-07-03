@@ -30,6 +30,7 @@
     		<ul class="nav navbar-nav">
       			<li class="active"><a href="#fakelink">Technology</a></li>
       			<li><a href="#fakelink">Contact Us</a></li>
+      			<li><a href="./logout">Log Out</a></li>
     		</ul>
     		<form class="navbar-form navbar-right" action="#" role="search">
       		<div class="form-group">

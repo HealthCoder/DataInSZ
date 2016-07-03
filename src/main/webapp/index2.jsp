@@ -18,7 +18,6 @@
 	</head>
 	
 	<body>
-	
 	<nav class="navbar navbar-default" role="navigation">
   		<div class="navbar-header">
     		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
@@ -29,32 +28,13 @@
   		<div class="collapse navbar-collapse" id="navbar-collapse-01">
     		<ul class="nav navbar-nav">
       			<li class="active"><a href="#fakelink">Technology</a></li>
-      			<li><a href="./index2">Contact Us</a></li>
+      			<li><a href="./index">Contact Us</a></li>
       			<li><a href="./logout">Log Out</a></li>
     		</ul>
  		 </div><!-- /.navbar-collapse -->
 	</nav><!-- /navbar -->
 	
-	<div class="container">
-	<div class="demo-illustrations">
-        <div class="demo-content">
-          <div><img src="Flat-UI-master/img/icons/svg/toilet-paper.svg" alt="Toilet-Paper"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/gift-box.svg" alt="Gift-Box"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/pencils.svg" alt="Pensils"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/clipboard.svg" alt="Clipboard"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/retina.svg" alt="Retina"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/compas.svg" alt="Compas"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/map.svg" alt="Map"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/chat.svg" alt="Chat"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/mail.svg" alt="Mail"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/book.svg" alt="Book"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/calendar.svg" alt="Calendar"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/paper-bag.svg" alt="Pocket"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/clocks.svg" alt="Watches"></div>
-          <div><img src="Flat-UI-master/img/icons/svg/loop.svg" alt="Infinity-Loop"></div>
-        </div>
-	</div>
-	</div>
+	<p>Session Test!</p>
 	</body>
     
 </html>

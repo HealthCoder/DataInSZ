@@ -1,4 +1,4 @@
-package com.executor.dao;
+package com.executor.dao.login;
 
 import com.executor.model.User;
 

@@ -1,4 +1,4 @@
-package com.executor.dao.impl;
+package com.executor.dao.login.impl;
 
 import java.util.List;
 import java.util.Map;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
-import com.executor.dao.ILoginDao;
+import com.executor.dao.login.ILoginDao;
 import com.executor.model.User;
 
 @Repository
