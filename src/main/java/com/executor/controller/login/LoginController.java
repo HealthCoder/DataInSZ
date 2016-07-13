@@ -32,11 +32,11 @@ public class LoginController {
 		}
 		return ConstantsUtil.LOG_IN_JSP;
 	}
-	
+
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public String logout(HttpSession httpSession) {
 		httpSession.setAttribute(ConstantsUtil.SESSION_LOGIN, ConstantsUtil.SESSION_LOGIN_NO);
 		return ConstantsUtil.LOG_IN_JSP;
 	}
-	
+
 }
