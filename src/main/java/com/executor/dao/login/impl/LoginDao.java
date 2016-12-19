@@ -48,7 +48,7 @@ public class LoginDao implements ILoginDao {
 				Map<String, String> map= new HashMap<String, String>();
 				map.put("username", rs.getString("username"));
 				map.put("password", rs.getString("password"));
-				return null;
+				return map;
 			}
 			
 		});

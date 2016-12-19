@@ -22,8 +22,17 @@
 	</context:component-scan>
 	<mvc:annotation-driven />
 
-	<context:property-placeholder location="classpath*:/datasource.properties"
-		ignore-resource-not-found="true" ignore-unresolvable="true" />
+	<!-- <context:property-placeholder location="classpath*:/datasource.properties" 
+		ignore-resource-not-found="true" ignore-unresolvable="true" /> -->
+
+	<bean id="decrypt"
+		class="com.executor.encrypt.DecryptPropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:datasource.properties</value>
+			</list>
+		</property>
+	</bean>
 
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
@@ -65,6 +74,24 @@
 		<property name="dataSource">
 			<ref bean="dataSource" />
 		</property>
+	</bean>
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxIdle" value="${redis.maxIdle}" />
+		<property name="maxActive" value="${redis.maxActive}" />
+		<property name="maxWait" value="${redis.maxWait}" />
+		<property name="testOnBorrow" value="${redis.testOnBorrow}" />
+	</bean>
+
+	<bean id="connectionFactory"
+		class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+		<property name="hostName" value="${redis.ip}" />
+		<property name="port" value="${redis.port}" />
+		<property name="poolConfig" ref="jedisPoolConfig" />
+	</bean>
+
+	<bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+		<property name="connectionFactory" ref="connectionFactory" />
 	</bean>
 
 </beans>
